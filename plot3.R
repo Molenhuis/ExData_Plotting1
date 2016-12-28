@@ -9,8 +9,8 @@ head(data)
   
 png(filename= "plot3.png", width = 480, height = 480)
 
-plot(data$DateTime,data$Sub_metering_1, type="l")
+plot(data$DateTime,data$Sub_metering_1, type="l", ylab = "Energy to submetering")
 lines(data$DateTime,data$Sub_metering_2, col="red")
 lines(data$DateTime,data$Sub_metering_3, col="blue")
-legend("topright", lwd = c(1,2,3) , pt.bg = "black", col = c("black","red","blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lwd = c(2,2,2) , pt.bg = "black", col = c("black","red","blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 dev.off()

@@ -6,6 +6,6 @@ data$DateTime <- strptime(paste(data$Date,data$Time), format= "%d/%m/%Y %H:%M:%S
 
 png(filename= "plot2.png", width = 480, height = 480)
 
-plot(data$DateTime,data$Global_active_power, type="l", lwd=2)
+plot(data$DateTime,data$Global_active_power, type="l", lwd=2, ylab = "Global Active Power (kilowatts)")
 
 dev.off()
